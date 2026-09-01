@@ -1,0 +1,16 @@
+{
+  "domain": "mi_s400_body_scale",
+  "name": "Mi S400 Body Scale BLE",
+  "bluetooth": [
+    { "local_name": "Xiaomi Scale S400*" },
+    { "local_name": "Body Composition Scale*" }
+  ],
+  "codeowners": ["@sjauijn"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/sjauijn/xiaomi-s400-live-HAOS",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "requirements": ["bleak>=0.21.0", "cryptography>=41.0.0"],
+  "version": "1.0.1"
+}

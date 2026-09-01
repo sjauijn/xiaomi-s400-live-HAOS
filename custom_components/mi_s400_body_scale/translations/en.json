@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mi S400 Body Scale",
+        "description": "Enter the scale's Bluetooth MAC address and its TOKEN.",
+        "data": {
+          "mac": "MAC address",
+          "token": "TOKEN (24 hex chars)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Mi S400 Body Scale",
+        "description": "Discovered {name}. Enter its TOKEN to add it.",
+        "data": {
+          "token": "TOKEN (24 hex chars)"
+        }
+      }
+    },
+    "error": {
+      "invalid_token": "Token must be 24 hex characters.",
+      "bad_token": "The scale rejected this token. It may have rotated after a factory reset or re-pairing.",
+      "auth_failed": "Could not complete the login handshake with the scale.",
+      "cannot_connect": "Could not find or connect to the scale over Bluetooth. Make sure it's in range and awake.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This scale is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "weight": { "name": "Weight" },
+      "impedance": { "name": "Impedance (250 kHz)" },
+      "impedance_low": { "name": "Impedance (50 kHz)" },
+      "profile_id": { "name": "Profile Id" }
+    }
+  }
+}

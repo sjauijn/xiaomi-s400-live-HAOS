@@ -1,0 +1,5 @@
+{
+  "name": "Mi S400 Body Scale BLE",
+  "render_readme": true,
+  "homeassistant": "2026.1.0"
+}

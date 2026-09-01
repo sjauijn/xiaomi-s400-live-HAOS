@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mi S400 Body Scale",
+        "description": "Введите Bluetooth MAC-адрес и TOKEN весов.",
+        "data": {
+          "mac": "MAC-адрес",
+          "token": "TOKEN (24 hex-символа)"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Mi S400 Body Scale",
+        "description": "Обнаружены весы {name}. Введите их TOKEN, чтобы добавить.",
+        "data": {
+          "token": "TOKEN (24 hex-символа)"
+        }
+      }
+    },
+    "error": {
+      "invalid_token": "Token должен состоять из 24 hex-символов.",
+      "bad_token": "Весы отклонили этот TOKEN. Возможно, он изменился после сброса настроек или повторного добавления в Mi Home.",
+      "auth_failed": "Не удалось завершить процедуру авторизации с весами.",
+      "cannot_connect": "Не удалось найти весы или подключиться к ним по Bluetooth. Убедитесь, что они в радиусе действия и включены.",
+      "unknown": "Неизвестная ошибка."
+    },
+    "abort": {
+      "already_configured": "Эти весы уже настроены."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "weight": { "name": "Вес" },
+      "impedance": { "name": "Импеданс (250 кГц)" },
+      "impedance_low": { "name": "Импеданс (50 кГц)" },
+      "profile_id": { "name": "Profile Id" }
+    }
+  }
+}
